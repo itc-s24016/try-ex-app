@@ -9,13 +9,19 @@ Express を使用したWebアプリケーション作成に挑戦するための
 
 ## 事前準備
 ### 1.package.json を作る  
-```pnpm init --init-type module```  
+```
+pnpm init --init-type module
+```  
 
 ### 2.Express をプロジェクトにインストールする  
-```pnpm add express```  
+```
+pnpm add express
+```  
 
 ### TypeScript 用のパッケージをインストールする  
-```pnpm add -D typescript @tsconfig/node-lts @types/node@22 @types/express```  
+```
+pnpm add -D typescript @tsconfig/node-lts @types/node@22 @types/express
+```  
 
 ### TypeScript 用の package.json を作る  
 tsconfig.json
@@ -34,7 +40,9 @@ tsconfig.json
 }
 ```
 ### 最小限のアプリケーションを作る  
-```mkdir src && cd$_```  
+```
+mkdir src && cd$_
+```  
   
 index.tsx  
 ```
@@ -47,4 +55,6 @@ app.get("/", async (req, res) => {
 });
 ```
 ### 動作確認　　
-```tsx src/index.ts```
+```
+tsx src/index.ts
+```
