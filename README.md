@@ -3,7 +3,6 @@ Express を使用したWebアプリケーション作成に挑戦するための
   
 ## 使用したもの  
  - TypeScript：言語    
- - WebStorm：開発環境
  - Express：フレームワーク  
  - pnpm：JSパッケージ管理ツール
 
@@ -39,9 +38,13 @@ tsconfig.json
  "include": ["src"]
 }
 ```
+  
+### .gitignore を作る  
+今回は、[.gitignore.io](https://www.toptal.com/developers/gitignore) で作成しました。(Git, Linux)  
+
 ### 最小限のアプリケーションを作る  
 ```
-mkdir src && cd$_
+mkdir src && cd $_
 ```  
   
 index.tsx  
@@ -53,8 +56,13 @@ const app = express();
 app.get("/", async (req, res) => {
  res.send("Welcome to Express");
 });
+
+
+app.listen(3210, () => {
+ console.log("Start server port: 3210");
+});
 ```
 ### 動作確認　　
 ```
-tsx src/index.ts
+tsx index.tsx
 ```
